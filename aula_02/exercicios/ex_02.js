@@ -8,4 +8,4 @@ n3 = leia.questionFloat("Insira a terceira nota: ")
 n4 = leia.questionFloat("Insira a quarta nota: ")
 
 let media = (n1+n2+n3+n4) / 4
-console.log(`Sua média é de: ${media.toFixed(1)}`)
+console.log(`\nSua média é de: ${media.toFixed(1)}`)

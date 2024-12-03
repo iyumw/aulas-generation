@@ -9,4 +9,4 @@ descontos = leia.questionFloat("Insira os descontos: ")
 
 let salLiquido = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(salarioBruto + addNoturno + (hrExtra * 5) - descontos)
 
-console.log(`Salario Liquido: ${salLiquido}`)
+console.log(`\nSalario Liquido: ${salLiquido}`)

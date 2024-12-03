@@ -8,4 +8,4 @@ n3 = leia.questionFloat("Digite o terceiro numero: ")
 n4 = leia.questionFloat("Digite o quarto numero: ")
 
 calculo = (n1 * n2) -  (n3 * n4)
-console.log(`A diferença é: ${calculo.toFixed(1)}`)
+console.log(`\nA diferença é: ${calculo.toFixed(1)}`)
