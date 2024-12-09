@@ -5,7 +5,7 @@ const fila = new Queue<string>();
 let opc = 1
 
 while(opc != 0) {
-    console.log("\n", "-".repeat(30) ,"\n")
+    console.log("-".repeat(30) ,"\n")
     console.log("1 - Adicionar cliente na fila")
     console.log("2 - Listar todos os clientes")
     console.log("3 - Retirar cliente da fila")
@@ -19,7 +19,7 @@ while(opc != 0) {
             break
         case 1:
             fila.enqueue(readlinesync.question("\nDigite o nome do cliente a ser adicionado: "))
-            console.log("\nCliente adicionado com sucesso!")
+            console.log("\nCliente adicionado com sucesso!\n")
             break
         case 2:
             console.log("\nClientes na fila:\n")
@@ -29,8 +29,8 @@ while(opc != 0) {
             const cliente = fila.dequeue()
             if(cliente) {
                 fila.printQueue()
-                console.log("\nCliente retirado: ", cliente)
-            }
+                console.log("\nCliente retirado: ", cliente, "\n")
+            } 
             break
         default:
             console.log("\nOpcao invalida!")

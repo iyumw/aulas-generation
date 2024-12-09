@@ -26,7 +26,7 @@ interface queueInterface<Type> {
   
     dequeue(): Type | undefined {
        if (this.isEmpty()) {
-          console.log("A fila está vazia!");
+          console.log("\nA fila está vazia!\n");
           return;
        } else {
           var element = this.QueueData.shift();
@@ -47,7 +47,7 @@ interface queueInterface<Type> {
   
     peek(): Type | undefined {
        if (this.isEmpty()) {
-          console.log("A fila está vazia");
+          console.log("\nA fila está vazia!\n");
           return;
        } else {
           var element = this.QueueData[0];
