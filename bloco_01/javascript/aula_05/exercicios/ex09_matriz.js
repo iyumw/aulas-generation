@@ -6,7 +6,7 @@ let elemPrincipal = [], elemSecundaria = []
 // Linhas da matriz
 let matriz = new Array(3);
 
-// Divide as linhas com colunas 
+// Colunas da matriz
 for (let i = 0; i < matriz.length; i++) {
     matriz[i] = new Array(3);
 }
@@ -23,8 +23,8 @@ for (let i = 0; i < iLinha; i++) {
         somaPrincipal += matriz[i][i];
         elemPrincipal[i] = matriz[i][i] 
 
-        somaSecundaria += matriz[i] [2 - i];
-        elemSecundaria[i] = matriz[i] [2 - i]
+        somaSecundaria += matriz[i] [matriz.length - 1 - i]; // para acessar os elementos da diagonal secundária
+        elemSecundaria[i] = matriz[i] [matriz.length - 1 - i]
 }
 
 console.table(matriz)
